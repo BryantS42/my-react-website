@@ -11,7 +11,7 @@ function App() {
       <Routes>
         <Route path="/"  element={<Home/>}/>
         <Route path='resume' element={<Resume/>}/>
-        <Route path='contact' element={<Contact/>}/>
+        <Route path='contact' element={<Contact submitv={false}/>}/>
         <Route path="*" element={<NoPage />} />
       </Routes>
     </BrowserRouter>

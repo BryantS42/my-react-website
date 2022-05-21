@@ -1,0 +1,44 @@
+body{
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
+
+.main-container{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+
+.header{
+    color: black;
+    font-weight: bold;
+    font-size:x-large;
+    text-align: center;
+    margin-top: 3em;
+    margin-bottom: 3em;
+}
+
+.resume-container{
+    height: 100%;
+    width: 100%;
+    background-color: lightsalmon;
+    border: 1px solid gray;
+    
+    display: grid;
+    gap: 25px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 3em 40em;
+    grid-template-areas: 
+        'nav-wrapper'
+        'resume-column'
+    ;
+}
+
+.res-link{
+    display: grid;
+    text-align: center;
+    justify-content: center;
+    color: blue;
+    text-decoration: underline;
+}

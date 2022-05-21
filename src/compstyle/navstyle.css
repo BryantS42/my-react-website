@@ -1,0 +1,28 @@
+.nav-wrapper{
+    background-color: #756213;
+    background-image: linear-gradient(315deg, #756213 0%, #000000 74%);
+
+    grid-area: nav-wrapper;
+    border-bottom: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 3em;
+}
+
+#navigation{
+    margin: 0;
+    padding: 10px;
+}
+
+#navigation li{
+    display: inline-block;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.name-wrapper{
+    display: flex;
+    padding: 15px;
+    height: 100%;
+}

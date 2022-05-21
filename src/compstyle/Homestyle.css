@@ -1,0 +1,144 @@
+html,body{
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
+
+p, li{
+    color: black;
+}
+
+a{
+    text-decoration: none;
+    color: #abe9cd;
+}
+
+ul{
+    list-style: none;
+}
+
+body{
+    background-color: white;
+}
+
+.pic{
+    display: block;
+    margin: 0 auto;
+    margin-top: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid gray;
+}
+
+#linked{
+    height: 50px;
+    width: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#github{
+    height: 50px;
+    width: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.s1{
+    border-bottom:1px solid black;
+}
+
+.s2{
+    background-color: honeydew;
+    border-bottom: 1px solid skyblue;
+    overflow: auto;
+}
+
+.main-container{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+
+.second-container{
+    height: 100%;
+    width: 100%;
+    background-color: salmon;
+    border: 1px solid gray;
+    
+    -webkit-box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
+    -moz-box-shadow: -1px -1px 3px -1px rgba(0,0,0,0.75); 
+    box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
+    display: grid;
+    gap: 25px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 3em 40em;
+    grid-template-areas: 
+        'nav-wrapper nav-wrapper'
+        'left-column right-column'
+    ;
+    
+}
+
+.left-column{
+    grid-area: left-column;
+    display: grid;
+    margin-top: 50px;
+}
+
+.right-column{
+    grid-area: right-column;
+    display: grid;
+    align-content: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+#msg-shadow{
+    background-color: cornsilk;
+    width: 300px;
+    height: 130px;
+    padding-left: 30px;
+    padding-top: 30px;
+}
+
+#message{
+    width: 300px;
+    border: 1.5px solid #17a2b8;
+    background-color: rgb(251,249,243,0.8);
+    padding: 15px;
+}
+
+.about-wrap{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-template-rows: 3em 25em;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-left: 25px;
+}
+
+.about-me{
+    display: grid;
+    align-content: center;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.social-links{
+    display: grid;
+    align-content: center;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.social-text{
+    font-size: 2em;
+}
+
+@media screen and (max-width: 1200px) {
+    .main-container{
+        width: 100%;
+    }
+    
+}
